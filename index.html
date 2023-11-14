@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="animate__animated animate__bounceInDown">Binary Calculator</h1>
+
+        <div class="input-container">
+            <label for="num1" class="animate__animated animate__fadeInLeft">Enter first binary number:</label>
+            <input type="text" id="num1" class="input-field animate__animated animate__fadeInRight">
+            <div class="buttons">
+                <button onclick="appendToInput('1', 'num1')" class="btn">1</button>
+                <button onclick="appendToInput('0', 'num1')" class="btn">0</button>
+            </div>
+        </div>
+
+        <label for="operation" class="animate__animated animate__fadeInLeft">Select operation:</label>
+        <select id="operation" class="input-field animate__animated animate__fadeInRight">
+            <option value="add">Addition</option>
+            <option value="subtract">Subtraction</option>
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+        </select>
+
+        <div class="input-container">
+            <label for="num2" class="animate__animated animate__fadeInLeft">Enter second binary number:</label>
+            <input type="text" id="num2" class="input-field animate__animated animate__fadeInRight">
+            <div class="buttons">
+                <button onclick="appendToInput('1', 'num2')" class="btn">1</button>
+                <button onclick="appendToInput('0', 'num2')" class="btn">0</button>
+            </div>
+        </div>
+
+        <button onclick="calculate()" class="btn animate__animated animate__zoomIn">Calculate</button>
+
+        <h2 class="animate__animated animate__fadeIn">Result:</h2>
+        <span id="result" class="animate__animated animate__fadeIn"></span>
+
+        <div class="designed-by">
+            Designed by Divyam, Akhil & Rituraj
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
